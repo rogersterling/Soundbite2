@@ -11,6 +11,11 @@
 		B55D78EF2C5F08D30047BF95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55D78EE2C5F08D30047BF95 /* ContentView.swift */; };
 		B55D78F12C5F08D40047BF95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55D78F02C5F08D40047BF95 /* Assets.xcassets */; };
 		B55D78F42C5F08D40047BF95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55D78F32C5F08D40047BF95 /* Preview Assets.xcassets */; };
+		B55D78FE2C5F0BF20047BF95 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55D78FD2C5F0BF20047BF95 /* MainView.swift */; };
+		B55D79002C5F0C000047BF95 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55D78FF2C5F0C000047BF95 /* SettingsView.swift */; };
+		B55D79022C5F0C0D0047BF95 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55D79012C5F0C0D0047BF95 /* Meal.swift */; };
+		B55D79042C5F0C1C0047BF95 /* AssemblyAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55D79032C5F0C1C0047BF95 /* AssemblyAIService.swift */; };
+		B55D79062C5F0C2B0047BF95 /* ClaudeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55D79052C5F0C2B0047BF95 /* ClaudeAPIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		B55D78EE2C5F08D30047BF95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B55D78F02C5F08D40047BF95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B55D78F32C5F08D40047BF95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B55D78FD2C5F0BF20047BF95 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B55D78FF2C5F0C000047BF95 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B55D79012C5F0C0D0047BF95 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		B55D79032C5F0C1C0047BF95 /* AssemblyAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyAIService.swift; sourceTree = "<group>"; };
+		B55D79052C5F0C2B0047BF95 /* ClaudeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,9 @@
 		B55D78EB2C5F08D30047BF95 /* Soundbite */ = {
 			isa = PBXGroup;
 			children = (
+				B55D78FC2C5F0A1B0047BF95 /* Views */,
+				B55D78FB2C5F0A180047BF95 /* Models */,
+				B55D78FA2C5F0A140047BF95 /* Services */,
 				B55D78EC2C5F08D30047BF95 /* SoundbiteApp.swift */,
 				B55D78EE2C5F08D30047BF95 /* ContentView.swift */,
 				B55D78F02C5F08D40047BF95 /* Assets.xcassets */,
@@ -65,6 +78,32 @@
 				B55D78F32C5F08D40047BF95 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B55D78FA2C5F0A140047BF95 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B55D79032C5F0C1C0047BF95 /* AssemblyAIService.swift */,
+				B55D79052C5F0C2B0047BF95 /* ClaudeAPIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B55D78FB2C5F0A180047BF95 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B55D79012C5F0C0D0047BF95 /* Meal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B55D78FC2C5F0A1B0047BF95 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B55D78FD2C5F0BF20047BF95 /* MainView.swift */,
+				B55D78FF2C5F0C000047BF95 /* SettingsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55D79022C5F0C0D0047BF95 /* Meal.swift in Sources */,
 				B55D78EF2C5F08D30047BF95 /* ContentView.swift in Sources */,
+				B55D79062C5F0C2B0047BF95 /* ClaudeAPIService.swift in Sources */,
+				B55D79002C5F0C000047BF95 /* SettingsView.swift in Sources */,
+				B55D78FE2C5F0BF20047BF95 /* MainView.swift in Sources */,
 				B55D78ED2C5F08D30047BF95 /* SoundbiteApp.swift in Sources */,
+				B55D79042C5F0C1C0047BF95 /* AssemblyAIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +319,7 @@
 				DEVELOPMENT_TEAM = K5NX44PXYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Soundbite needs access to your microphone to record meal descriptions";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +349,7 @@
 				DEVELOPMENT_TEAM = K5NX44PXYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Soundbite needs access to your microphone to record meal descriptions";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
